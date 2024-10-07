@@ -1,0 +1,40 @@
+.shoppers-container__shoppers {
+  position: fixed;
+  z-index: 100;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  gap: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  place-items: center;
+  padding: 12px 8px 12px 12px;
+  background-color: rgba(255, 255, 255, 0.95);
+  overflow-x: auto;
+}
+
+.shoppers-container__shopping-list {
+  background-color: blue;
+  margin-left: 180px;
+}
+
+.shoppers-container__shopping-list-button {
+  position: fixed;
+  z-index: 200;
+  bottom: 18px;
+  right: 5px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  transition: opacity var(--transition-duration);
+}
+
+.shoppers-container__shopping-list-button img {
+  width: 60%;
+}
+
+.shoppers-container__shopping-list-button:hover {
+  opacity: var(--opacity-hover);
+  cursor: pointer;
+}
